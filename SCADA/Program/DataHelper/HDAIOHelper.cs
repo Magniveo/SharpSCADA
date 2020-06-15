@@ -250,7 +250,7 @@ namespace DatabaseLib
                 //reader.Close();
                 HistoryData data = HistoryData.Empty;
                 using (MemoryMappedFile mapp = MemoryMappedFile.CreateFromFile(stream, Guid.NewGuid().ToString(), 0, MemoryMappedFileAccess.Read,
-                   new MemoryMappedFileSecurity(), HandleInheritability.Inheritable, false))
+                    HandleInheritability.Inheritable, false))
                 {
                     for (int k = 0; k < ln; k++)
                     {
@@ -370,7 +370,7 @@ namespace DatabaseLib
                 HistoryData data = HistoryData.Empty;
                 //stream.Read(new byte[]
                 using (MemoryMappedFile mapp = MemoryMappedFile.CreateFromFile(stream, Guid.NewGuid().ToString(), filelen, MemoryMappedFileAccess.Read,
-                   new MemoryMappedFileSecurity(), HandleInheritability.Inheritable, false))
+                    HandleInheritability.Inheritable, false))
                 {
                     for (int k = 0; k < ln; k++)//先读入当日索引区
                     {
@@ -615,7 +615,7 @@ namespace DatabaseLib
                     outstream.Write(new byte[0x100], 0, 0x100);
                     BinaryWriter w = new BinaryWriter(outstream);
                     using (MemoryMappedFile mapp = MemoryMappedFile.CreateFromFile(stream, "map1", stream.Length,
-                        MemoryMappedFileAccess.ReadWrite, new MemoryMappedFileSecurity(), HandleInheritability.Inheritable, false))
+                        MemoryMappedFileAccess.ReadWrite, HandleInheritability.Inheritable, false))
                     {
                         int days = DateTime.DaysInMonth(year, month);
                         long[] ps = new long[days + 1];

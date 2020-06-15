@@ -1,0 +1,11 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OmronPlcDriver\obj\Release\netcoreapp3.1\OmronPlcDriver.AssemblyInfoInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OmronPlcDriver\obj\Release\netcoreapp3.1\OmronPlcDriver.AssemblyInfo.cs
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OmronPlcDriver\obj\Release\netcoreapp3.1\OmronPlcDriver.csproj.CoreCompileInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OmronPlcDriver\bin\Release\netcoreapp3.1\OmronPlcDriver.deps.json
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OmronPlcDriver\bin\Release\netcoreapp3.1\OmronPlcDriver.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OmronPlcDriver\bin\Release\netcoreapp3.1\OmronPlcDriver.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OmronPlcDriver\bin\Release\netcoreapp3.1\DataService.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OmronPlcDriver\bin\Release\netcoreapp3.1\DataService.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OmronPlcDriver\obj\Release\netcoreapp3.1\OmronPlcDriver.csproj.CopyComplete
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OmronPlcDriver\obj\Release\netcoreapp3.1\OmronPlcDriver.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OmronPlcDriver\obj\Release\netcoreapp3.1\OmronPlcDriver.pdb

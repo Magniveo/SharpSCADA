@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "SiemensPLCDriver/1.0.0": {
+        "dependencies": {
+          "DataService": "1.0.0",
+          "libnodave.net": "0.0.0.0"
+        },
+        "runtime": {
+          "SiemensPLCDriver.dll": {}
+        }
+      },
+      "DataService/1.0.0": {
+        "runtime": {
+          "DataService.dll": {}
+        }
+      },
+      "libnodave.net/0.0.0.0": {
+        "runtime": {
+          "libnodave.net.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SiemensPLCDriver/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "libnodave.net/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

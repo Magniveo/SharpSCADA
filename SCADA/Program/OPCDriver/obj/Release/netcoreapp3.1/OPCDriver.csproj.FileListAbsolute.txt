@@ -1,0 +1,14 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCDriver\obj\Release\netcoreapp3.1\OPCDriver.AssemblyInfoInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCDriver\obj\Release\netcoreapp3.1\OPCDriver.AssemblyInfo.cs
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCDriver\obj\Release\netcoreapp3.1\OPCDriver.csproj.CoreCompileInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCDriver\bin\Release\netcoreapp3.1\OPCDriver.deps.json
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCDriver\bin\Release\netcoreapp3.1\OPCDriver.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCDriver\bin\Release\netcoreapp3.1\OPCDriver.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCDriver\bin\Release\netcoreapp3.1\DataService.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCDriver\bin\Release\netcoreapp3.1\OPCLib.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCDriver\bin\Release\netcoreapp3.1\DataService.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCDriver\bin\Release\netcoreapp3.1\OPCLib.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCDriver\obj\Release\netcoreapp3.1\OPCDriver.csprojAssemblyReference.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCDriver\obj\Release\netcoreapp3.1\OPCDriver.csproj.CopyComplete
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCDriver\obj\Release\netcoreapp3.1\OPCDriver.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCDriver\obj\Release\netcoreapp3.1\OPCDriver.pdb

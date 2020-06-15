@@ -1,0 +1,3 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\CoreTest\obj\Release\netcoreapp3.1\Example.Properties.Resources.resources
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\CoreTest\obj\Release\netcoreapp3.1\Example.csproj.GenerateResource.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\CoreTest\obj\Release\netcoreapp3.1\Example.csprojAssemblyReference.cache

@@ -1,0 +1,2 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ClientDriver\obj\Release\ClientDriver.csprojAssemblyReference.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ClientDriver\obj\Release\ClientDriver.csproj.CoreCompileInputs.cache

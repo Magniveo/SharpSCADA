@@ -23,7 +23,7 @@ namespace DatabaseLib
         const string DATALOGSOURCE = "Data Operations";
         const string DATALOGNAME = "Data Log";
         const int STRINGMAX = 255;
-
+        
         static EventLog Log;
         #region GetInstance
         private static IDataFactory _ins;

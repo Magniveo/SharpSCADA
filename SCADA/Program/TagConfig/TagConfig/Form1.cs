@@ -1,5 +1,4 @@
 ﻿using DatabaseLib;
-using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -8,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
-using Excel = Microsoft.Office.Interop.Excel;
 
 namespace TagConfig
 {
@@ -455,66 +453,66 @@ namespace TagConfig
 
         private void LoadFromExcel(string file)
         {
-            Excel.Application app = new Excel.Application();
-            Workbook book = app.Workbooks.Open(file);
-            Worksheet sheet = (Worksheet)book.Sheets[1];
+            //Excel.Application app = new Excel.Application();
+            //Workbook book = app.Workbooks.Open(file);
+            //Worksheet sheet = (Worksheet)book.Sheets[1];
             //list.Clear();
-            Dictionary<string, byte> dic = new Dictionary<string, byte>() { { "Bool", 1 }, { "SInt", 3 }, { "Word", 4 }, { "DInt", 7 }, { "Int", 4 }, { "Real", 8 }, { "String", 11 }, };
-            short maxid = list.Count == 0 ? (short)1 : list.Max(x => x.ID);
-            for (int i = 2; i < sheet.Rows.Count; i++)
-            {
-                if (((Range)sheet.Cells[i, 2]).Value2 == null)
-                    break;
-                try
-                {
-                    TagData tag = new TagData(++maxid, curgroupId, ((Range)sheet.Cells[i, 1]).Value2.ToString(), ((Range)sheet.Cells[i, 5]).Value2.ToString().TrimStart('%'),
-                        dic[((Range)sheet.Cells[i, 3]).Value2.ToString()], Convert.ToUInt16(((Range)sheet.Cells[i, 4]).Value2),
-                         true, false, false, false, null, Convert.ToString(((Range)sheet.Cells[i, 6]).Value2), 0, 0, 0);
-                    list.Add(tag);
-                    //bindingSource1.Add(tag);
-                }
-                catch (Exception e)
-                {
-                    continue;
-                    //Program.AddErrorLog(e);
-                }
-            }
-            list.Sort();
-            //indexList.Sort();
-            start = true;
+            //Dictionary<string, byte> dic = new Dictionary<string, byte>() { { "Bool", 1 }, { "SInt", 3 }, { "Word", 4 }, { "DInt", 7 }, { "Int", 4 }, { "Real", 8 }, { "String", 11 }, };
+            //short maxid = list.Count == 0 ? (short)1 : list.Max(x => x.ID);
+            //for (int i = 2; i < sheet.Rows.Count; i++)
+            //{
+            //    if (((Range)sheet.Cells[i, 2]).Value2 == null)
+            //        break;
+            //    try
+            //    {
+            //        TagData tag = new TagData(++maxid, curgroupId, ((Range)sheet.Cells[i, 1]).Value2.ToString(), ((Range)sheet.Cells[i, 5]).Value2.ToString().TrimStart('%'),
+            //            dic[((Range)sheet.Cells[i, 3]).Value2.ToString()], Convert.ToUInt16(((Range)sheet.Cells[i, 4]).Value2),
+            //             true, false, false, false, null, Convert.ToString(((Range)sheet.Cells[i, 6]).Value2), 0, 0, 0);
+            //        list.Add(tag);
+            //        //bindingSource1.Add(tag);
+            //    }
+            //    catch (Exception e)
+            //    {
+            //        continue;
+            //        //Program.AddErrorLog(e);
+            //    }
+            //}
+            //list.Sort();
+            ////indexList.Sort();
+            //start = true;
         }
 
         private void LoadFromKepserverCSV(string file)
         {
-            Excel.Application app = new Excel.Application();
-            Workbook book = app.Workbooks.Open(file);
-            Worksheet sheet = (Worksheet)book.Sheets[1];
-            //list.Clear();
-            Dictionary<string, byte> dic = new Dictionary<string, byte>() { { "Boolean", 1 }, { "Byte", 3 }, { "Short", 4 }, { "Word", 5 }, { "DWord", 6 }, { "Long ", 7 }, { "Float", 8 }, { "String", 11 }, };
-            short maxid = list.Count == 0 ? (short)1 : list.Max(x => x.ID);
-            for (int i = 2; i < sheet.Rows.Count; i++)
-            {
-                var name = ((Range)sheet.Cells[i, 1]).Value2;
-                if (name == null)
-                    break;
-                try
-                {
-                    var type = dic[((Range)sheet.Cells[i, 3]).Value2.ToString()];
-                    TagData tag = new TagData(++maxid, curgroupId, name, ((Range)sheet.Cells[i, 2]).Value2.ToString().TrimStart('%'),
-                        type, (ushort)(type < 4 ? 1 : type < 6 ? 2 : type < 11 ? 4 : 255),
-                         true, false, false, false, null, Convert.ToString(((Range)sheet.Cells[i, 16]).Value2), 0, 0, 0);
-                    list.Add(tag);
-                    //bindingSource1.Add(tag);
-                }
-                catch (Exception e)
-                {
-                    continue;
-                    //Program.AddErrorLog(e);
-                }
-            }
-            list.Sort();
-            //indexList.Sort();
-            start = true;
+            //Excel.Application app = new Excel.Application();
+            //Workbook book = app.Workbooks.Open(file);
+            //Worksheet sheet = (Worksheet)book.Sheets[1];
+            ////list.Clear();
+            //Dictionary<string, byte> dic = new Dictionary<string, byte>() { { "Boolean", 1 }, { "Byte", 3 }, { "Short", 4 }, { "Word", 5 }, { "DWord", 6 }, { "Long ", 7 }, { "Float", 8 }, { "String", 11 }, };
+            //short maxid = list.Count == 0 ? (short)1 : list.Max(x => x.ID);
+            //for (int i = 2; i < sheet.Rows.Count; i++)
+            //{
+            //    var name = ((Range)sheet.Cells[i, 1]).Value2;
+            //    if (name == null)
+            //        break;
+            //    try
+            //    {
+            //        var type = dic[((Range)sheet.Cells[i, 3]).Value2.ToString()];
+            //        TagData tag = new TagData(++maxid, curgroupId, name, ((Range)sheet.Cells[i, 2]).Value2.ToString().TrimStart('%'),
+            //            type, (ushort)(type < 4 ? 1 : type < 6 ? 2 : type < 11 ? 4 : 255),
+            //             true, false, false, false, null, Convert.ToString(((Range)sheet.Cells[i, 16]).Value2), 0, 0, 0);
+            //        list.Add(tag);
+            //        //bindingSource1.Add(tag);
+            //    }
+            //    catch (Exception e)
+            //    {
+            //        continue;
+            //        //Program.AddErrorLog(e);
+            //    }
+            //}
+            //list.Sort();
+            ////indexList.Sort();
+            //start = true;
         }
 
         public static readonly Dictionary<string, int> severitys = new Dictionary<string, int>
@@ -524,58 +522,58 @@ namespace TagConfig
 
         private void LoadAlarmFromExcel(string file)
         {
-            Excel.Application app = new Excel.Application();
-            Workbook book = app.Workbooks.Open(file);
-            Worksheet sheet = (Worksheet)book.Sheets[1];
-            short maxid = list.Max(x => x.ID);
-            for (int i = 2; i < sheet.Rows.Count; i++)
-            {
-                if (((Range)sheet.Cells[i, 1]).Value2 == null)
-                    break;
-                try
-                {
-                    string name = ((Range)sheet.Cells[i, 2]).Value2.Trim('"');
-                    string digit = "." + ((Range)sheet.Cells[i, 7]).Value2.ToString();
-                    string name1 = "";
-                    int index = list.BinarySearch(new TagData(curgroupId, name));
-                    if (index < 0)
-                    {
-                        for (int j = 0; j < list.Count; j++)
-                        {
-                            if (list[j].GroupID == curgroupId && list[j].Name.Contains(((Range)sheet.Cells[i, 6]).Value2.Trim('"')))
-                            {
-                                index = j; name1 = name;
-                                break;
-                            }
-                        }
-                    }
-                    else name1 = name + digit;
-                    TagData _ptag = list[index];
-                    if (!string.IsNullOrEmpty(name))
-                    {
-                        //var _tag = list.Find((x) => x.Name == name);
-                        TagData _tag = null;
-                        index = list.BinarySearch(new TagData(curgroupId, name1));
-                        if (index >= 0) _tag = list[index];
-                        if (_tag == null)
-                        {
-                            _tag = new TagData(++maxid, curgroupId, name1, _ptag.Address.ToUpper().Replace("DBW", "DBX").Replace("DBD", "DBX") + digit, 1, 1, true, false, false, false, null, "", 0, 0, 0);
-                            list.Add(_tag);
-                        }
-                        var condition = new Condition(++Program.MAXCONDITIONID, name1, 4, 4, 0, 0, true, 0, 0);
-                        var sub = new SubCondition(true, severitys[((Range)sheet.Cells[i, 5]).Value2.ToString()], condition.TypeId, 64, 1, ((Range)sheet.Cells[i, 3]).Value2.ToString());
-                        condition.SubConditions.Add(sub);
-                        conditions.Add(condition);
-                        subConds.Add(sub);
-                        _tag.HasAlarm = true;
-                    }
-                }
-                catch (Exception e)
-                {
-                    continue;
-                }
-            }
-            list.Sort();
+            //Excel.Application app = new Excel.Application();
+            //Workbook book = app.Workbooks.Open(file);
+            //Worksheet sheet = (Worksheet)book.Sheets[1];
+            //short maxid = list.Max(x => x.ID);
+            //for (int i = 2; i < sheet.Rows.Count; i++)
+            //{
+            //    if (((Range)sheet.Cells[i, 1]).Value2 == null)
+            //        break;
+            //    try
+            //    {
+            //        string name = ((Range)sheet.Cells[i, 2]).Value2.Trim('"');
+            //        string digit = "." + ((Range)sheet.Cells[i, 7]).Value2.ToString();
+            //        string name1 = "";
+            //        int index = list.BinarySearch(new TagData(curgroupId, name));
+            //        if (index < 0)
+            //        {
+            //            for (int j = 0; j < list.Count; j++)
+            //            {
+            //                if (list[j].GroupID == curgroupId && list[j].Name.Contains(((Range)sheet.Cells[i, 6]).Value2.Trim('"')))
+            //                {
+            //                    index = j; name1 = name;
+            //                    break;
+            //                }
+            //            }
+            //        }
+            //        else name1 = name + digit;
+            //        TagData _ptag = list[index];
+            //        if (!string.IsNullOrEmpty(name))
+            //        {
+            //            //var _tag = list.Find((x) => x.Name == name);
+            //            TagData _tag = null;
+            //            index = list.BinarySearch(new TagData(curgroupId, name1));
+            //            if (index >= 0) _tag = list[index];
+            //            if (_tag == null)
+            //            {
+            //                _tag = new TagData(++maxid, curgroupId, name1, _ptag.Address.ToUpper().Replace("DBW", "DBX").Replace("DBD", "DBX") + digit, 1, 1, true, false, false, false, null, "", 0, 0, 0);
+            //                list.Add(_tag);
+            //            }
+            //            var condition = new Condition(++Program.MAXCONDITIONID, name1, 4, 4, 0, 0, true, 0, 0);
+            //            var sub = new SubCondition(true, severitys[((Range)sheet.Cells[i, 5]).Value2.ToString()], condition.TypeId, 64, 1, ((Range)sheet.Cells[i, 3]).Value2.ToString());
+            //            condition.SubConditions.Add(sub);
+            //            conditions.Add(condition);
+            //            subConds.Add(sub);
+            //            _tag.HasAlarm = true;
+            //        }
+            //    }
+            //    catch (Exception e)
+            //    {
+            //        continue;
+            //    }
+            //}
+            //list.Sort();
         }
 
         private void SaveToCsv(string file)

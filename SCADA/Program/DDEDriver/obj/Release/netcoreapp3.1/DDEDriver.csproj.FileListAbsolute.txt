@@ -1,0 +1,11 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DDEDriver\obj\Release\netcoreapp3.1\DDEDriver.AssemblyInfoInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DDEDriver\obj\Release\netcoreapp3.1\DDEDriver.AssemblyInfo.cs
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DDEDriver\obj\Release\netcoreapp3.1\DDEDriver.csproj.CoreCompileInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DDEDriver\bin\Release\netcoreapp3.1\DDEDriver.deps.json
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DDEDriver\bin\Release\netcoreapp3.1\DDEDriver.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DDEDriver\bin\Release\netcoreapp3.1\DDEDriver.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DDEDriver\bin\Release\netcoreapp3.1\DataService.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DDEDriver\bin\Release\netcoreapp3.1\DataService.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DDEDriver\obj\Release\netcoreapp3.1\DDEDriver.csproj.CopyComplete
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DDEDriver\obj\Release\netcoreapp3.1\DDEDriver.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DDEDriver\obj\Release\netcoreapp3.1\DDEDriver.pdb

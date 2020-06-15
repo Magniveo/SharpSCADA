@@ -1,0 +1,13 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataHelper\obj\Release\netcoreapp3.1\DataHelper.AssemblyInfoInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataHelper\obj\Release\netcoreapp3.1\DataHelper.AssemblyInfo.cs
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataHelper\obj\Release\netcoreapp3.1\DataHelper.csproj.CoreCompileInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataHelper\bin\Release\netcoreapp3.1\DataHelper.dll.config
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataHelper\bin\Release\netcoreapp3.1\DataHelper.deps.json
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataHelper\bin\Release\netcoreapp3.1\DataHelper.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataHelper\obj\Release\netcoreapp3.1\DataHelper.csprojAssemblyReference.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataHelper\bin\Release\netcoreapp3.1\DataService.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataHelper\bin\Release\netcoreapp3.1\DataService.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataHelper\obj\Release\netcoreapp3.1\DataHelper.csproj.CopyComplete
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataHelper\bin\Release\netcoreapp3.1\DataHelper.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataHelper\obj\Release\netcoreapp3.1\DataHelper.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataHelper\obj\Release\netcoreapp3.1\DataHelper.pdb

@@ -1,0 +1,4 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\FileDriver\obj\Release\netcoreapp3.1\FileDriver.csprojAssemblyReference.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\FileDriver\obj\Release\netcoreapp3.1\FileDriver.AssemblyInfoInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\FileDriver\obj\Release\netcoreapp3.1\FileDriver.AssemblyInfo.cs
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\FileDriver\obj\Release\netcoreapp3.1\FileDriver.csproj.CoreCompileInputs.cache

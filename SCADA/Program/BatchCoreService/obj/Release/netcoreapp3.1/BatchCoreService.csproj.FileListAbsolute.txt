@@ -1,0 +1,10 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\BatchCoreService\obj\Release\netcoreapp3.1\BatchCoreService.BatchCoreService.resources
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\BatchCoreService\obj\Release\netcoreapp3.1\BatchCoreService.ProjectInstaller.resources
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\BatchCoreService\obj\Release\netcoreapp3.1\BatchCoreService.csproj.GenerateResource.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\BatchCoreService\obj\Release\netcoreapp3.1\BatchCoreService.AssemblyInfoInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\BatchCoreService\obj\Release\netcoreapp3.1\BatchCoreService.AssemblyInfo.cs
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\BatchCoreService\obj\Release\netcoreapp3.1\BatchCoreService.csproj.CoreCompileInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\BatchCoreService\bin\Release\netcoreapp3.1\BatchCoreService.dll.config
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\BatchCoreService\bin\Release\netcoreapp3.1\BatchCoreService.deps.json
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\BatchCoreService\bin\Release\netcoreapp3.1\BatchCoreService.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\BatchCoreService\obj\Release\netcoreapp3.1\BatchCoreService.csprojAssemblyReference.cache

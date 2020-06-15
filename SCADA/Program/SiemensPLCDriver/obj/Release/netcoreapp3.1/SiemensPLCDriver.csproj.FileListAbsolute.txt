@@ -1,0 +1,13 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\SiemensPLCDriver\obj\Release\netcoreapp3.1\SiemensPLCDriver.AssemblyInfoInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\SiemensPLCDriver\obj\Release\netcoreapp3.1\SiemensPLCDriver.AssemblyInfo.cs
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\SiemensPLCDriver\obj\Release\netcoreapp3.1\SiemensPLCDriver.csproj.CoreCompileInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\SiemensPLCDriver\obj\Release\netcoreapp3.1\SiemensPLCDriver.csprojAssemblyReference.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\SiemensPLCDriver\bin\Release\netcoreapp3.1\SiemensPLCDriver.deps.json
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\SiemensPLCDriver\bin\Release\netcoreapp3.1\SiemensPLCDriver.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\SiemensPLCDriver\bin\Release\netcoreapp3.1\SiemensPLCDriver.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\SiemensPLCDriver\bin\Release\netcoreapp3.1\DataService.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\SiemensPLCDriver\bin\Release\netcoreapp3.1\libnodave.net.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\SiemensPLCDriver\bin\Release\netcoreapp3.1\DataService.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\SiemensPLCDriver\obj\Release\netcoreapp3.1\SiemensPLCDriver.csproj.CopyComplete
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\SiemensPLCDriver\obj\Release\netcoreapp3.1\SiemensPLCDriver.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\SiemensPLCDriver\obj\Release\netcoreapp3.1\SiemensPLCDriver.pdb

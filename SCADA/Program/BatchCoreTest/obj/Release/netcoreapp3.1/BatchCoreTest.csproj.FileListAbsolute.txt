@@ -1,0 +1,6 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\BatchCoreTest\obj\Release\netcoreapp3.1\BatchCoreTest.Properties.Resources.resources
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\BatchCoreTest\obj\Release\netcoreapp3.1\BatchCoreTest.csproj.GenerateResource.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\BatchCoreTest\obj\Release\netcoreapp3.1\BatchCoreTest.AssemblyInfoInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\BatchCoreTest\obj\Release\netcoreapp3.1\BatchCoreTest.AssemblyInfo.cs
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\BatchCoreTest\obj\Release\netcoreapp3.1\BatchCoreTest.csproj.CoreCompileInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\BatchCoreTest\obj\Release\netcoreapp3.1\BatchCoreTest.csprojAssemblyReference.cache

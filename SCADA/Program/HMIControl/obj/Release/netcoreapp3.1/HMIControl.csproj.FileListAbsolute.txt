@@ -1,0 +1,5 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\HMIControl\obj\Release\netcoreapp3.1\HMIControl.Properties.Resources.resources
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\HMIControl\obj\Release\netcoreapp3.1\HMIControl.csproj.GenerateResource.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\HMIControl\obj\Release\netcoreapp3.1\HMIControl.AssemblyInfoInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\HMIControl\obj\Release\netcoreapp3.1\HMIControl.AssemblyInfo.cs
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\HMIControl\obj\Release\netcoreapp3.1\HMIControl.csproj.CoreCompileInputs.cache

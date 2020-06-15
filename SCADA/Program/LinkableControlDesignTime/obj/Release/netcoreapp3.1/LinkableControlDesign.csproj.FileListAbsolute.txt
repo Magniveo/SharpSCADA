@@ -1,0 +1,6 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\LinkableControlDesignTime\obj\Release\netcoreapp3.1\LinkableControlDesign.Properties.Resources.resources
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\LinkableControlDesignTime\obj\Release\netcoreapp3.1\HMIControl.VisualStudio.Design.TagComplexEditor.resources
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\LinkableControlDesignTime\obj\Release\netcoreapp3.1\HMIControl.VisualStudio.Design.TagList.resources
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\LinkableControlDesignTime\obj\Release\netcoreapp3.1\HMIControl.VisualStudio.Design.TagWindowEditor.resources
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\LinkableControlDesignTime\obj\Release\netcoreapp3.1\HMIControl.VisualStudio.Design.TagWriteEditor.resources
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\LinkableControlDesignTime\obj\Release\netcoreapp3.1\LinkableControlDesign.csproj.GenerateResource.cache

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "OPCLib/1.0.0": {
+        "dependencies": {
+          "DataService": "1.0.0"
+        },
+        "runtime": {
+          "OPCLib.dll": {}
+        }
+      },
+      "DataService/1.0.0": {
+        "runtime": {
+          "DataService.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OPCLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

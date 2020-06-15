@@ -1,0 +1,5 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ModbusDriver\obj\Release\netcoreapp3.1\ModbusDriver.csprojAssemblyReference.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ModbusDriver\obj\Release\netcoreapp3.1\ModbusDriver.AssemblyInfoInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ModbusDriver\obj\Release\netcoreapp3.1\ModbusDriver.AssemblyInfo.cs
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ModbusDriver\obj\Release\netcoreapp3.1\ModbusDriver.csproj.CoreCompileInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ModbusDriver\bin\Release\netcoreapp3.1\DataService.dll

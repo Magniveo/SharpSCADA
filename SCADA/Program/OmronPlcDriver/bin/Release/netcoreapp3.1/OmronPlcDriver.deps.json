@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "OmronPlcDriver/1.0.0": {
+        "dependencies": {
+          "DataService": "1.0.0"
+        },
+        "runtime": {
+          "OmronPlcDriver.dll": {}
+        }
+      },
+      "DataService/1.0.0": {
+        "runtime": {
+          "DataService.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OmronPlcDriver/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

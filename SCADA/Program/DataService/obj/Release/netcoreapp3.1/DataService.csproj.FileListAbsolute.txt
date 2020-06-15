@@ -1,0 +1,9 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\obj\Release\netcoreapp3.1\DataService.AssemblyInfoInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\obj\Release\netcoreapp3.1\DataService.AssemblyInfo.cs
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\obj\Release\netcoreapp3.1\DataService.csproj.CoreCompileInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\bin\Release\netcoreapp3.1\DataService.deps.json
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\bin\Release\netcoreapp3.1\DataService.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\bin\Release\netcoreapp3.1\DataService.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\obj\Release\netcoreapp3.1\DataService.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\obj\Release\netcoreapp3.1\DataService.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\obj\Release\netcoreapp3.1\DataService.csprojAssemblyReference.cache

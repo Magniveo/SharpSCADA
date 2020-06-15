@@ -1,0 +1,5 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\bin\Release\DataService.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\bin\Release\DataService.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\obj\Release\DataService.csproj.CoreCompileInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\obj\Release\DataService.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\obj\Release\DataService.pdb

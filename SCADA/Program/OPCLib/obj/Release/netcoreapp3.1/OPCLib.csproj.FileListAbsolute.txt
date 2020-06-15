@@ -1,0 +1,12 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCLib\obj\Release\netcoreapp3.1\OPCLib.AssemblyInfoInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCLib\obj\Release\netcoreapp3.1\OPCLib.AssemblyInfo.cs
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCLib\obj\Release\netcoreapp3.1\OPCLib.csproj.CoreCompileInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCLib\obj\Release\netcoreapp3.1\OPCLib.csprojAssemblyReference.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCLib\bin\Release\netcoreapp3.1\OPCLib.deps.json
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCLib\bin\Release\netcoreapp3.1\OPCLib.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCLib\bin\Release\netcoreapp3.1\OPCLib.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCLib\bin\Release\netcoreapp3.1\DataService.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCLib\bin\Release\netcoreapp3.1\DataService.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCLib\obj\Release\netcoreapp3.1\OPCLib.csproj.CopyComplete
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCLib\obj\Release\netcoreapp3.1\OPCLib.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\OPCLib\obj\Release\netcoreapp3.1\OPCLib.pdb

@@ -1,0 +1,12 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\PanasonicDriver\obj\Release\netcoreapp3.1\PanasonicDriver.AssemblyInfoInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\PanasonicDriver\obj\Release\netcoreapp3.1\PanasonicDriver.AssemblyInfo.cs
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\PanasonicDriver\obj\Release\netcoreapp3.1\PanasonicDriver.csproj.CoreCompileInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\PanasonicDriver\bin\Release\netcoreapp3.1\PanasonicDriver.deps.json
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\PanasonicDriver\bin\Release\netcoreapp3.1\PanasonicDriver.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\PanasonicDriver\bin\Release\netcoreapp3.1\DataService.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\PanasonicDriver\bin\Release\netcoreapp3.1\DataService.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\PanasonicDriver\obj\Release\netcoreapp3.1\PanasonicDriver.csproj.CopyComplete
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\PanasonicDriver\bin\Release\netcoreapp3.1\PanasonicDriver.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\PanasonicDriver\obj\Release\netcoreapp3.1\PanasonicDriver.csprojAssemblyReference.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\PanasonicDriver\obj\Release\netcoreapp3.1\PanasonicDriver.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\PanasonicDriver\obj\Release\netcoreapp3.1\PanasonicDriver.pdb

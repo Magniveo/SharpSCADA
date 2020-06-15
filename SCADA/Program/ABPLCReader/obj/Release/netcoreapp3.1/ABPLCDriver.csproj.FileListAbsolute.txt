@@ -1,0 +1,11 @@
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ABPLCReader\obj\Release\netcoreapp3.1\ABPLCDriver.AssemblyInfoInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ABPLCReader\obj\Release\netcoreapp3.1\ABPLCDriver.AssemblyInfo.cs
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ABPLCReader\obj\Release\netcoreapp3.1\ABPLCDriver.csproj.CoreCompileInputs.cache
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ABPLCReader\bin\Release\netcoreapp3.1\ABPLCDriver.deps.json
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ABPLCReader\bin\Release\netcoreapp3.1\ABPLCDriver.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ABPLCReader\bin\Release\netcoreapp3.1\ABPLCDriver.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ABPLCReader\bin\Release\netcoreapp3.1\DataService.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ABPLCReader\bin\Release\netcoreapp3.1\DataService.pdb
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ABPLCReader\obj\Release\netcoreapp3.1\ABPLCDriver.csproj.CopyComplete
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ABPLCReader\obj\Release\netcoreapp3.1\ABPLCDriver.dll
+C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\ABPLCReader\obj\Release\netcoreapp3.1\ABPLCDriver.pdb
