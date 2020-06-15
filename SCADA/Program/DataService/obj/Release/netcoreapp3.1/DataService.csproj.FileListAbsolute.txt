@@ -6,4 +6,3 @@ C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\bin
 C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\bin\Release\netcoreapp3.1\DataService.pdb
 C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\obj\Release\netcoreapp3.1\DataService.dll
 C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\obj\Release\netcoreapp3.1\DataService.pdb
-C:\Users\gerasimov\Documents\PSSproject\SharpSCADA\SCADA\Program\DataService\obj\Release\netcoreapp3.1\DataService.csprojAssemblyReference.cache

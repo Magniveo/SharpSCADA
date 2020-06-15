@@ -16,4 +16,10 @@
     <PackageReference Include="System.ServiceProcess.ServiceController" Version="4.7.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ClientDriver\ClientDriver.csproj" />
+    <ProjectReference Include="..\DataHelper\DataHelper.csproj" />
+    <ProjectReference Include="..\DataService\DataService.csproj" />
+  </ItemGroup>
+
 </Project>
