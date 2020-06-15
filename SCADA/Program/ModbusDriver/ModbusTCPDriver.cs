@@ -8,7 +8,7 @@ using System.Text;
 
 namespace ModbusDriver
 {
-    [Description("Modbus TCP协议")]
+    [Description("Modbus TCP protocol")]
     public sealed class ModbusTCPReader : IPLCDriver, IMultiReadWrite                    //IPLCDriver : IDriver, IReaderWriter       IDriver : IDisposable
     {
         #region
@@ -16,14 +16,14 @@ namespace ModbusDriver
         {
             // get { return 252; }
             //get { return 256; }
-            /* 更新人：yjz
-              更新日期：20171125
-              更新原因： 在 modbus——TCP中协议规定如下：
-                       ADU=MBAP+功能码+数据    其中 ADU 256字节，MBAP 7字节，功能码1字节，数据为248字节 
-                       PDU=功能码+数据        
-                       所以PDU应为： 249字节
+            /* Updated by: yjz
+               Update date: 20171125
+               Reason for update: The protocol in modbus-TCP is as follows:
+                        ADU=MBAP+function code+data Among them ADU 256 bytes, MBAP 7 bytes, function code 1 byte, data is 248 bytes
+                        PDU = function code + data
+                        So the PDU should be: 249 bytes
              */
-            get { return 249; } //0xF9 十进制为249
+            get { return 249; } //0xF9 249 decimal
         }
 
         public DeviceAddress GetDeviceAddress(string address)
@@ -254,7 +254,7 @@ namespace ModbusDriver
                 {
                     try
                     {
-                        tcpSynCl.Send(write_data, 0, write_data.Length, SocketFlags.None);//是否存在lock的问题？
+                        tcpSynCl.Send(write_data, 0, write_data.Length, SocketFlags.None);//Is there a lock problem？
                         int result = tcpSynCl.Receive(tcpSynClBuffer, 0, 0xFF, SocketFlags.None);
 
                         byte function = tcpSynClBuffer[7];
@@ -472,7 +472,7 @@ namespace ModbusDriver
         public int WriteBytes(DeviceAddress address, byte[] bit)
         {
             var data = address.DBNumber > 2 ? WriteMultipleRegister(address.Area, address.Start, bit)
-                : WriteMultipleCoils(address.Area, address.Start, (ushort)(8 * bit.Length), bit);//应考虑到
+                : WriteMultipleCoils(address.Area, address.Start, (ushort)(8 * bit.Length), bit);//Should take into account
             return data == null ? -1 : 0;
         }
 
