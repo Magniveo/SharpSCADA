@@ -9,12 +9,12 @@ using System.Threading;
 
 namespace ModbusDriver
 {
-    [Description("Modbus RTU协议")]
+    [Description("Modbus RTU protocol")]
     //ModbusRTUReader : IPLCDriver         IPLCDriver : IDriver, IReaderWriter              IDriver : IDisposable
     public sealed class ModbusRTUReader : IPLCDriver
     {
         #region :IDriver
-        //从站地址
+        //Slave address
         short _id;
         public short ID
         {
@@ -34,7 +34,7 @@ namespace ModbusDriver
         }
 
         string _port = "COM1";
-        [Category("串口设置"), Description("串口号")]
+        [Category("Serial port settings"), Description("Serial number")]
         public string PortName
         {
             get { return _port; }
@@ -50,7 +50,7 @@ namespace ModbusDriver
         }
 
         private int _timeOut = 3000;
-        [Category("串口设置"), Description("通迅超时时间")]
+        [Category("Serial port settings"), Description("Communication timeout")]
         public int TimeOut
         {
             get { return _timeOut; }
@@ -59,7 +59,7 @@ namespace ModbusDriver
 
 
         private int _baudRate = 9600;
-        [Category("串口设置"), Description("波特率")]
+        [Category("Serial port settings"), Description("波特率")]
         public int BaudRate
         {
             get { return _baudRate; }
@@ -68,14 +68,14 @@ namespace ModbusDriver
         //   private SerialPort _serialPort;
 
         private int _dataBits = 8;
-        [Category("串口设置"), Description("数据位")]
+        [Category("Serial port settings"), Description("Data bit")]
         public int DataBits
         {
             get { return _dataBits; }
             set { _dataBits = value; }
         }
         private StopBits _stopBits = StopBits.One;
-        [Category("串口设置"), Description("停止位")]
+        [Category("Serial port settings"), Description("Stop bit")]
         public StopBits StopBits
         {
             get { return _stopBits; }
@@ -83,7 +83,7 @@ namespace ModbusDriver
         }
 
         private Parity _parity = Parity.None;
-        [Category("串口设置"), Description("奇偶校验")]
+        [Category("Serial port settings"), Description("Parity check")]
         public Parity Parity
         {
             get { return _parity; }
@@ -142,7 +142,7 @@ namespace ModbusDriver
         }
         public event IOErrorEventHandler OnError;
         #endregion
-        //自定义构造函数3
+        //Custom constructor 3
         public ModbusRTUReader(IDataServer server, short id, string name)
         {
             _id = id;
@@ -153,35 +153,35 @@ namespace ModbusDriver
         private SerialPort _serialPort;
 
         /*
-         Sbyte:代表有符号的8位整数，数值范围从-128 ～ 127
-　      　Byte:代表无符号的8位整数，数值范围从0～255
-　     　Short:代表有符号的16位整数，范围从-32768 ～ 32767
-　     　ushort:代表有符号的16位整数，范围从0 到 65,535
-        Int:代表有符号的32位整数，范围从-2147483648 ～ 2147483648
-　　     uint:代表无符号的32位整数，范围从0 ～ 4294967295
-　     　Long:代表有符号的64位整数，范围从-9223372036854775808 ～ 9223372036854775808
-　     　Ulong:代表无符号的64位整数，范围从0 ～ 18446744073709551615。
+         Sbyte: Represents a signed 8-bit integer with a value ranging from -128 to 127
+　       Byte: represents an unsigned 8-bit integer, the value range is from 0 to 255
+　       Short: represents a signed 16-bit integer, ranging from -32768 to 32767
+　       ushort: represents a signed 16-bit integer, ranging from 0 to 65,535
+         Int: Represents a signed 32-bit integer, ranging from -2147483648 to 2147483648
+　　     Uint: represents an unsigned 32-bit integer, ranging from 0 to 4294967295
+　       Long: represents a signed 64-bit integer, ranging from -9223372036854775808 to 9223372036854775808
+　       Ulong: represents an unsigned 64-bit integer ranging from 0 to 18446744073709551615.
         */
         private byte[] CreateReadHeader(int id, int startAddress, ushort length, byte function)
         {
             byte[] data = new byte[8];
-            data[0] = (byte)id;				// Slave id high byte   从站地址
+            data[0] = (byte)id;				// Slave id high byte   Slave address
             data[1] = function;					// Message size
-            byte[] _adr = BitConverter.GetBytes((short)startAddress);//以字节数组的形式返回指定的 16 位无符号整数值。
+            byte[] _adr = BitConverter.GetBytes((short)startAddress);//Returns the specified as an array of bytes 16 Bit unsigned integer value。
             //apply on small endian, TODO:support big endian
-            data[2] = _adr[1];				// Start address 起始地址的高八位
-            data[3] = _adr[0];				// Start address起始地址的低八位
+            data[2] = _adr[1];				// Start address The upper eight bits of the starting address
+            data[3] = _adr[0];				// Start address The lower eight bits of the starting address
             byte[] _length = BitConverter.GetBytes((short)length);
             //apply on small endian, TODO:support big endian
-            data[4] = _length[1];			// Number of data to read 寄存器数量的高八位
-            data[5] = _length[0];			// Number of data to read 寄存器数量的低八位
+            data[4] = _length[1];			// Number of data to read The upper eight bits of the number of registers
+            data[5] = _length[0];			// Number of data to read The lower eight bits of the number of registers
             byte[] arr = Utility.CalculateCrc(data, 6);
-            data[6] = arr[0]; //CRC校验的低八位
-            data[7] = arr[1];//CRC校验的高八位
+            data[6] = arr[0]; //The lower eight bits of CRC check
+            data[7] = arr[1];//The high eight bits of CRC check
             return data;
         }
 
-        #region 写单个线圈或单个离散输出   功能码：0x05
+        #region Write a single coil or a single discrete output function code：0x05
         public int WriteSingleCoils(int id, int startAddress, bool OnOff)
         {
             byte[] data = new byte[8];
@@ -203,7 +203,7 @@ namespace ModbusDriver
                     numBytesRead += _serialPort.Read(frameBytes, numBytesRead, frameBytes.Length - numBytesRead);
                 var slave = frameBytes[0];
                 var code = frameBytes[1];
-                if (code == 0x85)//错误则只需读5字节
+                if (code == 0x85)//Errors only need to read 5 bytes
                 {
                     var errorcode = frameBytes[2];
                     if (OnError != null)
@@ -213,7 +213,7 @@ namespace ModbusDriver
                     Thread.Sleep(10);
                     return -1;
                 }
-                else//正确需8字节
+                else//8 bytes is required
                 {
                     numBytesRead = 0;
                     while (numBytesRead < 3)
@@ -225,24 +225,24 @@ namespace ModbusDriver
         }
         #endregion
 
-        #region 写多个线圈  功能码：0x0F   15
+        #region Write multiple coil function code: 0x0F  15
         public int WriteMultipleCoils(int id, int startAddress, ushort numBits, byte[] values)
         {
             int len = values.Length;
             byte[] data = new byte[len + 9];
-            data[0] = (byte)id;				// Slave id high byte  从站地址高八位
-            data[1] = Modbus.fctWriteMultipleCoils;				// Function code  功能码
+            data[0] = (byte)id;				// Slave id high byte  Slave address High eight
+            data[1] = Modbus.fctWriteMultipleCoils;				// Function code  function code
             byte[] _adr = BitConverter.GetBytes((short)startAddress);
-            data[2] = _adr[1];				// Start address       开始地址高八位
-            data[3] = _adr[0];				// Start address       开始地址低八位
+            data[2] = _adr[1];				// Start address       Start address high eight
+            data[3] = _adr[0];				// Start address       The lower eight bits of the start address
             byte[] _length = BitConverter.GetBytes((short)numBits);
-            data[4] = _length[1];			// Number of data to read  寄存器数量高八位
-            data[5] = _length[0];           // Number of data to read  寄存器数量低八位
-            data[6] = (byte)len;            //字节数量
-            Array.Copy(values, 0, data, 7, len);  //在data中加入变更数据
+            data[4] = _length[1];			// Number of data to read  The upper eight bits of the number of registers
+            data[5] = _length[0];           // Number of data to read  The lower eight registers
+            data[6] = (byte)len;            //Bytes the amount
+            Array.Copy(values, 0, data, 7, len);  //Add change data to data
             byte[] arr = Utility.CalculateCrc(data, len + 7);
-            data[len + 7] = arr[0];  //CRC校验的低八位
-            data[len + 8] = arr[1];  //CRC校验的高八位
+            data[len + 7] = arr[0];  //The lower eight bits of CRC check
+            data[len + 8] = arr[1];  //The high eight bits of CRC check
             lock (_async)
             {
                 _serialPort.Write(data, 0, data.Length);
@@ -252,7 +252,7 @@ namespace ModbusDriver
                     numBytesRead += _serialPort.Read(frameBytes, numBytesRead, frameBytes.Length - numBytesRead);
                 var slave = frameBytes[0];
                 var code = frameBytes[1];
-                if (code == 0x85)//错误则只需读5字节
+                if (code == 0x85)//Errors only need to read 5 bytes
                 {
                     var errorcode = frameBytes[2];
                     if (OnError != null)
@@ -262,7 +262,7 @@ namespace ModbusDriver
                     Thread.Sleep(10);
                     return -1;
                 }
-                else//正确需9字节
+                else//9 bytes is required
                 {
                     numBytesRead = 0;
                     while (numBytesRead < 4)
@@ -274,20 +274,20 @@ namespace ModbusDriver
         }
         #endregion
 
-        #region 写单个保持寄存器 功能码:0x06
+        #region Write a single holding register function code:0x06
         public int WriteSingleRegister(int id, int startAddress, byte[] values)
         {
             byte[] data = new byte[8];
-            data[0] = (byte)id;				// Slave id high byte 从站地址高八位
-            data[1] = Modbus.fctWriteSingleRegister;				// Function code 功能码
+            data[0] = (byte)id;				// Slave id high byte Slave address High eight
+            data[1] = Modbus.fctWriteSingleRegister;				// Function code function code
             byte[] _adr = BitConverter.GetBytes((short)startAddress);
-            data[2] = _adr[1];				// Start address    开始地址高八位
-            data[3] = _adr[0];				// Start address    开始地址高八位
-            data[4] = values[1];            //变更数据的高位
-            data[5] = values[0];            //变更数据的低位
+            data[2] = _adr[1];				// Start address    Start address high eight
+            data[3] = _adr[0];				// Start address    Start address high eight
+            data[4] = values[1];            //Change the high bit of the data
+            data[5] = values[0];            //Change the low bit of data
             byte[] arr = Utility.CalculateCrc(data, 6);
-            data[6] = arr[0];               //CRC校验码低八位
-            data[7] = arr[1];               //CRC校验码高八位
+            data[6] = arr[0];               //The lower eight bits of the CRC check code
+            data[7] = arr[1];               //The upper eight bits of the CRC check code
             lock (_async)
             {
                 _serialPort.Write(data, 0, data.Length);
@@ -297,7 +297,7 @@ namespace ModbusDriver
                     numBytesRead += _serialPort.Read(frameBytes, numBytesRead, frameBytes.Length - numBytesRead);
                 var slave = frameBytes[0];
                 var code = frameBytes[1];
-                if (code == 0x85)//错误则只需读5字节
+                if (code == 0x85)//Errors only need to read 5 bytes
                 {
                     var errorcode = frameBytes[2];
                     if (OnError != null)
@@ -307,7 +307,7 @@ namespace ModbusDriver
                     Thread.Sleep(10);
                     return -1;
                 }
-                else//正确需8字节
+                else//8 bytes is required
                 {
                     numBytesRead = 0;
                     while (numBytesRead < 3)
@@ -319,25 +319,25 @@ namespace ModbusDriver
         }
         #endregion
 
-        #region 写多个保持寄存器 功能码：0x10    16
+        #region Write multiple holding registers function code：0x10    16
         public int WriteMultipleRegister(int id, int startAddress, byte[] values)
         {
             int len = values.Length;
             if (len % 2 > 0) len++;
             byte[] data = new byte[len + 9];
-            data[0] = (byte)id;			// Slave id high byte  从站地址
-            data[1] = Modbus.fctWriteMultipleRegister;				// Function code  功能码
+            data[0] = (byte)id;			// Slave id high byte  Slave address
+            data[1] = Modbus.fctWriteMultipleRegister;				// Function code  function code
             byte[] _adr = BitConverter.GetBytes((short)startAddress);
-            data[2] = _adr[1];				// Start address        开始地址高八位
-            data[3] = _adr[0];				// Start address        开始地址低八位
+            data[2] = _adr[1];				// Start address        Start address high eight
+            data[3] = _adr[0];				// Start address        The lower eight bits of the start address
             byte[] _length = BitConverter.GetBytes((short)(len >> 1));
-            data[4] = _length[1];			// Number of data to read 寄存器数量高八位
-            data[5] = _length[0];			// Number of data to read 寄存器数量低八位
-            data[6] = (byte)len;            //字节数
-            Array.Copy(values, 0, data, 7, len); //把变更数据加入data中
+            data[4] = _length[1];			// Number of data to read The upper eight bits of the number of registers
+            data[5] = _length[0];			// Number of data to read The lower eight registers
+            data[6] = (byte)len;            //Bytes
+            Array.Copy(values, 0, data, 7, len); //Add change data to data
             byte[] arr = Utility.CalculateCrc(data, len + 7);
-            data[len + 7] = arr[0];          //crc校验的低八位
-            data[len + 8] = arr[1];          //CRC校验的高八位
+            data[len + 7] = arr[0];          //The lower eight bits of CRC check
+            data[len + 8] = arr[1];          //The high eight bits of CRC check
             lock (_async)
             {
                 _serialPort.Write(data, 0, data.Length);
@@ -347,7 +347,7 @@ namespace ModbusDriver
                     numBytesRead += _serialPort.Read(frameBytes, numBytesRead, frameBytes.Length - numBytesRead);
                 var slave = frameBytes[0];
                 var code = frameBytes[1];
-                if (code == 0x85)//错误则只需读5字节
+                if (code == 0x85)//Errors only need to read 5 bytes
                 {
                     var errorcode = frameBytes[2];
                     if (OnError != null)
@@ -357,7 +357,7 @@ namespace ModbusDriver
                     Thread.Sleep(10);
                     return -1;
                 }
-                else//正确需8字节
+                else//8 bytes is required
                 {
                     numBytesRead = 0;
                     while (numBytesRead < 3)
@@ -372,14 +372,14 @@ namespace ModbusDriver
         #region  :IPLCDriver
         public int PDU
         {
-            // get { return 0x100; } //0x100十进制值为256
-            /* 更新人：yjz
-               更新日期：20171125
-               更新原因： 在串行通信中RS232 / RS485  modbus协议规定如下：
-                        ADU=地址域+功能码+数据+差错校验   其中 ADU 256字节，地址域1字节，功能码1字节，数据为252字节 ，    差错检验2字节，
-                        PDU=功能码+数据        
-                        所以PDU应为： 253字节 */
-            get { return 0xFD; } //0xFD 十进制为253
+            // get { return 0x100; } //0x100 decimal value is 256
+            /* Updated by: yjz
+                Update date: 20171125
+                Reason for update: The RS232 / RS485 modbus protocol in serial communication is as follows:
+                         ADU=address field+function code+data+error check Among them ADU 256 bytes, address field 1 byte, function code1 byte, data is 252 bytes, error check 2 bytes,
+                         PDU=function code+data
+                         So the PDU should be: 253 bytes */
+            get { return 0xFD; } //0xFD 253 decimal
         }
         private string _serverName = "unknown";
         public string ServerName
